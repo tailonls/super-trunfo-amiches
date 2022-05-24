@@ -140,7 +140,7 @@ var carta14 = {
 
 var carta15 = {
   nome: "Seya se levantando",
-  imagem: "imagens/seya.JPEG",
+  imagem: "imagens/seya.png",
   atributos: {
     ataque: 1,
     defesa: 2,
@@ -151,7 +151,7 @@ var carta15 = {
 
 var carta16 = {
   nome: "Hulk da vila cruzeiro",
-  imagem: "imagens/hulk.JPEG",
+  imagem: "imagens/hulk.png",
   atributos: {
     ataque: 8,
     defesa: 8,
@@ -172,7 +172,7 @@ var carta17 = {
 
 var carta18 = {
   nome: "Galo Robo do SENAI",
-  imagem: "imagens/galo.jpeg",
+  imagem: "imagens/galo.png",
   atributos: {
     ataque: 8,
     defesa: 2,
