@@ -1,10 +1,10 @@
 var carta1 = {
-  nome: "Agiota",
+  nome: "Pablo Agiota",
   imagem: "imagens/agiota.jpg",
   atributos: {
     ataque: 9,
-    defesa: 7,
-    delícia: 8
+    defesa: 8,
+    delícia: 7
   }
 };
 
@@ -119,12 +119,12 @@ var carta12 = {
 };
 
 var carta13 = {
-  nome: "Zweist procedural",
-  imagem: "imagens/zweist_procedural.jpg",
+  nome: "Amaro do universo 1999",
+  imagem: "imagens/amaro_cabelo.jpg",
   atributos: {
-    ataque: 5,
+    ataque: 8,
     defesa: 6,
-    delícia: 4
+    delícia: 9
   }
 };
 
@@ -138,7 +138,60 @@ var carta14 = {
   }
 };
 
-var cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10, carta11, carta12, carta13, carta14];
+var carta15 = {
+  nome: "Seya se levantando",
+  imagem: "imagens/seya.JPEG",
+  atributos: {
+    ataque: 1,
+    defesa: 2,
+    delícia: 5
+  }
+};
+
+
+var carta16 = {
+  nome: "Hulk da vila cruzeiro",
+  imagem: "imagens/hulk.JPEG",
+  atributos: {
+    ataque: 8,
+    defesa: 8,
+    delícia: 2
+  }
+};
+
+
+var carta17 = {
+  nome: "El Vandro gato espanhol",
+  imagem: "imagens/el_vandro.png",
+  atributos: {
+    ataque: 5,
+    defesa: 6,
+    delícia: 10
+  }
+};
+
+var carta18 = {
+  nome: "Galo Robo do SENAI",
+  imagem: "imagens/galo.jpeg",
+  atributos: {
+    ataque: 8,
+    defesa: 2,
+    delícia: 1
+  }
+};
+
+var carta19 = {
+  nome: "Olavo",
+  imagem: "imagens/caveira.jpg",
+  atributos: {
+    ataque: 2,
+    defesa: 1,
+    delícia: 1
+  }
+};
+
+var cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10, carta11, carta12, carta13, carta14, 
+carta15, carta16, carta17, carta18, carta19];
 var cartaMaquina;
 var cartaJogador;
 
@@ -148,13 +201,13 @@ function sortearCarta() {
 	
 	
   resetarCartas();
-  var indiceCartaMaquina = parseInt(Math.random() * 14);
+  var indiceCartaMaquina = parseInt(Math.random() * 19);
   cartaMaquina = cartas[indiceCartaMaquina];
 
-  var indiceCartaJogador = parseInt(Math.random() * 14);
+  var indiceCartaJogador = parseInt(Math.random() * 19);
   // Condição para não pegar carta igual
   while (indiceCartaJogador == indiceCartaMaquina) {
-    indiceCartaJogador = parseInt(Math.random() * 14);
+    indiceCartaJogador = parseInt(Math.random() * 19);
   }
   cartaJogador = cartas[indiceCartaJogador];
 
